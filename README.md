@@ -1,3 +1,7 @@
+# Project description
+
+This is a mini project I created using React routers. It's got a products page and a contact page. Once I click on contact there's a little slide in animation. When I click on products there is also a slide in animation, it executes the fetch on the API the page then displays these nine products. When I click on any one of these products it goes over to the API, makes a new request and fetches the specific product I'm clicking on and then shows the details I've requested such as the pictures of the product, the price and description. Also notice that I'm changing the page title accordingly. Lastly, I added a loading animation for everytime I click on a different product page for it to show before the image finishes loading.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

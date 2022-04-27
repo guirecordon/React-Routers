@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Produtos.modules.css';
+import styles from './Produtos.module.css';
 import Head from './Head';
 
 const Produtos = () => {
@@ -13,7 +13,7 @@ const Produtos = () => {
   }, []);
   if (produtos === null) return null;
   return (
-    <section>
+    <section className={styles.produtos}>
       <Head title="Ranek" description="Descrição dos produtos da Ranek" />
       {produtos.map((produto) => (
         <Link key={produto.id} to={`produto/${produto.id}`}>
