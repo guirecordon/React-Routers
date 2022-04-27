@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
 import Produtos from './Components/Produtos';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import Contatos from './Components/Contatos';
 import Produto from './Components/Produto';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
@@ -15,14 +15,14 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Produtos />} />
-            <Route path="contato" element={<Contatos />} />
             <Route path="produto/:id" element={<Produto />} />
+            <Route path="contato" element={<Contatos />} />
           </Routes>
         </div>
         <Footer />
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

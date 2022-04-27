@@ -1,6 +1,6 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import styles from './Produto.module.css';
+import { useParams } from 'react-router-dom';
 import Head from './Head';
 
 const Produto = () => {
@@ -32,17 +32,17 @@ const Produto = () => {
     <section className={styles.produto + ' animeLeft'}>
       <Head
         title={`Ranek | ${produto.nome}`}
-        description={`Este é o nome do produto: ${produto.nome}`}
+        description={`Ranek | Esse é um produto: ${produto.nome}`}
       />
       <div>
         {produto.fotos.map((foto) => (
-          <img key={foto.src} src={foto.src} alt={produto.titulo} />
+          <img key={foto.src} src={foto.src} alt={foto.titulo} />
         ))}
       </div>
       <div>
         <h1>{produto.nome}</h1>
-        <span>R$ {produto.preco}</span>
-        <p>{produto.descricao}</p>
+        <span className={styles.preco}>R$ {produto.preco}</span>
+        <p className={styles.descricao}>{produto.descricao}</p>
       </div>
     </section>
   );

@@ -1,23 +1,53 @@
-.animeLeft {
-  transform: translateX(-30px);
-  opacity: 0;
-  animation: slide-in .5s forwards;
+body {
+  margin: 2rem;
 }
 
-@keyframes slide-in {
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  margin: 0 auto;
+  min-height: calc(100vh + 10rem);
+}
+
+.content {
+  flex: 1;
+}
+
+.animeLeft {
+  transform: translateX(-20px);
+  opacity: 0;
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
   to {
-    opacity: initial;
     transform: initial;
+    opacity: initial;
   }
 }
 
 .loading {
-  height: 20px;
   width: 20px;
+  height: 20px;
   border-radius: 50%;
-  border: solid 10px #ccc;
+  border: 10px solid #ccc;
   border-right-color: transparent;
-  animation: loading .8s infinite;
+  animation: loading 1s infinite;
 }
 
 @keyframes loading {
