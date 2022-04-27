@@ -1,0 +1,27 @@
+.header {
+  margin-bottom: 1.2rem;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  background: #eee;
+  margin-left: 1.5rem;
+  padding: 15px 1.2rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: tomato;
+}
+
+:global(.active) {
+  color: tomato;
+}

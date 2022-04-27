@@ -1,0 +1,28 @@
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.dados {
+  padding: 0px;
+  list-style: none;
+}
+
+.dados li {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.dados li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: .3rem;
+  margin-right: 10px;
+  background: gray;
+}
